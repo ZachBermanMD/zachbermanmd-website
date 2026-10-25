@@ -3,9 +3,9 @@
   // https://scholar.google.com/citations?user=wWlx5DQAAAAJ&hl=en
   var SCHOLAR_STATS = {
     hIndex: 12,
-    citations: 595,
-    i10Index: 14,
-    updated: 'July 2026',
+    citations: 638,
+    i10Index: 15,
+    updated: 'October 2026',
   };
   var PROFILE_URL = 'https://scholar.google.com/citations?user=wWlx5DQAAAAJ&hl=en';
 

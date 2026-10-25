@@ -22,7 +22,7 @@
   ];
 
   var CAT_RULES = [
-    { key: 'y90', re: /\by-?90\b|yttrium|radioembolization|radioembolisation|\btare\b|radiation segmentectomy/i },
+    { key: 'y90', re: /\by-?90\b|yttrium|radioembolization|radioembolisation|\btare\b|\bsirt\b|radiation segmentectomy/i },
     { key: 'ablation', re: /ablation|cryoablation|microwave|irreversible electroporation|\bire\b/i },
     { key: 'immuno', re: /immun|checkpoint|nivolumab|durvalumab|tremelimumab|pd-?1|ctla-?4|tlr9|oncolytic|pembrolizumab/i },
     { key: 'hcc', re: /hepatocellular|\bhcc\b/i },
@@ -39,6 +39,9 @@
 
   // Shown only if PubMed is unreachable AND the visitor has no cached copy yet.
   var FALLBACK_PUBLICATIONS = [
+    { pmid: '42880693', year: '2026', journal: 'Journal of Vascular and Interventional Radiology', type: 'Original Research', title: 'Single-Session Ablative Radioembolization for Small Hepatocellular Carcinoma Is Associated with Lower Treatment-Episode Charges, Shorter Time to Treatment, and Reduced Travel Burden', authors: 'Thomas S, Collins B, Minocha J, Redmond JW, Sandu R, Mandt TC, <strong>Berman ZT</strong>', link: 'https://doi.org/10.1016/j.jvir.2026.109145', cats: ['y90', 'hcc'] },
+    { pmid: '42468839', year: '2026', journal: 'Journal of Vascular and Interventional Radiology', type: 'Original Research', title: 'Ablative Radioembolization Dosing Thresholds for Glass Microspheres Predictive of Complete Imaging Response and Survival in Patients with Hepatocellular Carcinomas Larger than 4 cm: A Multi-institution Retrospective Analysis', authors: 'Pianka KT, Collins BM, Placek S, Robinson S, Gimenez J, Minocha J, Sandow T, Young SJ, <strong>Berman ZT</strong>', link: 'https://doi.org/10.1016/j.jvir.2026.108961', cats: ['y90', 'hcc'] },
+    { pmid: '42650014', year: '2026', journal: 'Cancers', type: 'Original Research', title: 'Selective Internal Radiation Therapy (SIRT) for SDH-Deficient GIST Demonstrates Encouraging Durable Response Rates: An International Multicenter Case Series', authors: '<strong>Berman ZT</strong>, Hohenberger P, Bulusu R, Rose SC, Fanta PT, Evans J, Diehl S, Menge F, Ali N, Sicklick JK', link: 'https://doi.org/10.3390/cancers18162704', cats: ['y90'] },
     { pmid: '42084516', year: '2026', journal: 'Radiology', type: 'Original Research', title: 'Consortium on Bridging Radiation Segmentectomy (COBRAS): A Multicenter Study of Complete Pathologic Necrosis in Hepatocellular Carcinoma', authors: '<strong>Berman ZT</strong>, De la Garza-Ramos C, Montazeri SA, et al.', link: 'https://doi.org/10.1148/radiol.251923', cats: ['y90', 'hcc'] },
     { pmid: '41765078', year: '2026', journal: 'Journal of Vascular and Interventional Radiology', type: 'Original Research', title: 'Initial Experience with Robotic-Assisted CT-Guided Ablation: Analysis from a Single Center’s Learning Curve in the First 54 Patients', authors: '<strong>Berman ZT</strong>, Louie B, Minocha J, et al.', link: 'https://doi.org/10.1016/j.jvir.2026.108681', cats: ['ablation'] },
     { pmid: '40836102', year: '2025', journal: 'Cardiovascular and Interventional Radiology', type: 'Original Research', title: 'Comparison of Dosimetry Models and Dose Thresholds for Predicting Pathologic Response to Yttrium-90 Radioembolization with Glass Microspheres', authors: 'Pianka KT, Barahman M, Minocha J, et al., <strong>Berman ZT</strong>', link: 'https://doi.org/10.1007/s00270-025-04161-0', cats: ['y90'] },
